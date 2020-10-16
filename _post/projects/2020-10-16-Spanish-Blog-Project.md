@@ -1,7 +1,8 @@
 ---
 layout: post
-categories: projects
 title: Example project
+categories: projects
+
 ---
 
-hi
+why isn't this showing up?
