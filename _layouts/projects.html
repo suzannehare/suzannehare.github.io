@@ -10,7 +10,7 @@ layout: default
     {% for post in site.categories['projects'] %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p>{{ post.title | escape }}</p>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         <p>{{post.content}}</p>
 
       </li>
