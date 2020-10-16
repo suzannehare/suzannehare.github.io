@@ -16,12 +16,10 @@ layout: default
 {% endfor %}
   
   
-{% for post in site.categories['projects'] %}
-  <h2>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-    </a>
-  </h2>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}"> {{ post.title }} </a>
+  </li>
 {% endfor %}
   
 </div>
