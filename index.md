@@ -1,5 +1,4 @@
 ---
 layout: default
-permalink: home
 ---
-This is the index.html page.
+This is the index.md page.
