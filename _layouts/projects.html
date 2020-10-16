@@ -6,28 +6,12 @@ layout: default
 
   {{ content }}
 
-  <ul class="post-list">
-    {% for post in site.categories['projects'] %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        <p>{{post.content}}</p>
-
-      </li>
-    {% endfor %}
-  </ul>
-  
-<ul>
-{% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
-    <ul>
-    {% for post in category.last %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {{post.content}}
-    {% endfor %}
-    </ul>
-  </li>
+{% for post in site.categories['projects'] %}
+  <h2>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
 {% endfor %}
-</ul>
-
+  
 </div>
