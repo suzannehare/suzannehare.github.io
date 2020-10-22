@@ -5,10 +5,10 @@ layout: default
 <div class="projects">
 
   {{ content }}
-  
- <ul class="post-list">
+
+  <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.categories != null %}
+    {% if post.project != null %}
         <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,17 +18,9 @@ layout: default
     {% endif %}
     {% endfor %}
   </ul>
-  
-<!--
-{% for post in site.category['projects'] %}
-    <li>
-        <p>
-            <a href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-            </a>
-        </p>
-    </li>
-{% endfor %}
--->
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
   
 </div>
