@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: project
 permalink: /Projects/
 title: My Projects
 ---
 
 Honor Hare is awesome!
 
+<!--
 <div class="posts">
   {% for post in site.categories['projects'] %}
     <article class="post">
@@ -23,4 +24,7 @@ Honor Hare is awesome!
       </a>
     </article>
   {% endfor %}
+-->
+
+this.
 </div>
