@@ -6,6 +6,20 @@ layout: default
 
   {{ content }}
   
+ <ul class="post-list">
+    {% for post in site.posts %}
+    {% if post.categories != null %}
+        <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  
+<!--
 {% for post in site.category['projects'] %}
     <li>
         <p>
@@ -15,5 +29,6 @@ layout: default
         </p>
     </li>
 {% endfor %}
+-->
   
 </div>
