@@ -5,11 +5,12 @@ layout: default
 <div class="projects">
 
   {{ content }}
-
-{% for post in site.categories.projects %}
- <a class="post-link" href="{{ post.url }}">{{ post.title | escape }}</a> 
-{% endfor %}
-
+<ul class="post-list>
+  {% for post in site.categories.projects %}
+    <li> <a class="post-link" href="{{ post.url }}">{{ post.title | escape }}</a> </li>
+  {% endfor %}
+</ul>
+                                                   
 </div>
   
 </div>
