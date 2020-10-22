@@ -8,5 +8,5 @@ thoughts: true
 
 Also
 
-![#DitchMitch](/assets/images/ditchmitch.jpeg)
+![#DitchMitch]({{site.url}}/assets/images/ditchmitch.jpeg)
 
