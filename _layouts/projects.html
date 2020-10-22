@@ -6,24 +6,14 @@ layout: default
 
   {{ content }}
   
-    {% for cat in site.categories %}
-      <h3>{{ cat[0] }}</h3>
-      <ul>
-        {% for post in cat[1] %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endfor %}
-  
-  
-  <ul class="post-list">
-    {% for post in site.posts %}
-    {% if post.categpry == "projects" %}
-        <li>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+{% for post in site.category['projects'] %}
+    <li>
+        <p>
+            <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+        </p>
+    </li>
+{% endfor %}
   
 </div>
