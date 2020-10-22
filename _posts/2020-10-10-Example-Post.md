@@ -8,7 +8,5 @@ thoughts: true
 
 Also
 
-![#DitchMitch](/images/ditchmitch.jpeg)
+![#DitchMitch](/assets/images/ditchmitch.jpeg)
 
-
-<style> img {max-width: 100%; max-height: 200px; left: 50%; }</style>
