@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: blog
 permalink: /Blog/
 title: "My Blog"
 ---
