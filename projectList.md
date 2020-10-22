@@ -7,4 +7,3 @@ title: "Projects"
 Honor Hare is awesome!
 
 this.
-</div>
